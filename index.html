@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Formulário de Login</title>
+</head>
+
+
+<body class="m-0 p-0 antialiased bg-[url('https://images.unsplash.com')] bg-cover bg-center bg-no-repeat">
+    
+    <main class="h-screen flex justify-center items-center backdrop-blur-sm bg-black/10">
+        
+    
+        <form class="flex flex-col justify-center items-center bg-white p-8 rounded-2xl shadow-[0_4px_10px_0_rgba(0,0,0,0.2)]">
+            
+            <h1 class="text-3xl font-bold text-gray-800">Bem-vindo(a)</h1>
+            <h2 class="text-sm text-gray-500 mt-1">Insira seus dados de acesso</h2>
+
+            <div class="w-72 flex flex-col mt-6">
+                
+                
+                <label class="text-gray-800 font-semibold text-sm mb-[-12px] z-10" for="email">E-mail</label>
+                <i class='bx bx-envelope text-gray-400 text-lg translate-x-[10px] translate-y-[28px] w-fit'></i>
+                <input class="w-full rounded-lg pt-2 pb-2 pl-9 pr-3 border border-gray-300 outline-none focus:border-blue-500 transition-all text-sm" 
+                       type="email" id="email" placeholder="Seu email:" autocomplete="off">
+
+               
+                <div class="mt-4 flex flex-col">
+                    <label class="text-gray-800 font-semibold text-sm mb-[-12px] z-10" for="password">Senha</label>
+                    <i class='bx bx-lock-alt text-gray-400 text-lg translate-x-[10px] translate-y-[28px] w-fit'></i>
+                    <input class="w-full rounded-lg pt-2 pb-2 pl-9 pr-3 border border-gray-300 outline-none focus:border-blue-500 transition-all text-sm" 
+                           type="password" id="password" placeholder="Sua senha:">
+                </div>
+
+                
+                <a href="#" class="text-xs text-blue-600 hover:underline mt-2 self-end">Esqueceu a senha?</a>
+
+                
+                <button type="submit" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors cursor-pointer">
+                    Entrar
+                </button>
+                
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
